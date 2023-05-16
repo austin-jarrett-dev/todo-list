@@ -33,6 +33,18 @@
   }
 }
 
+.todo-list__task--delete-btn {
+  background-color: red;
+  color: white;
+  border-radius: 10px / 15px;
+  padding: 3px 10px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: maroon;
+  }
+}
+
 .todo-list__task--list {
   list-style-type: none;
   margin: 0;
@@ -42,9 +54,19 @@
 .todo-list__task--list li {
   border: 1px solid black;
   padding: 10px;
+  margin-top: 10px;
   cursor: pointer;
+}
+
+.todo-list__task--list li button {
+  margin-left: 10px;
 }
 
 .todo-list__task--list li:hover {
   background-color: lightgray;
+}
+
+.done {
+  text-decoration: line-through;
+  color: white;
 }
